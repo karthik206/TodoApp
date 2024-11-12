@@ -1,0 +1,112 @@
+/* Reset and Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Body Style - Dark Mode */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #121212; /* Dark background for the body */
+    color: #e0e0e0; /* Light text color for better contrast */
+  }
+  
+  /* App Container Styling */
+  .app {
+    background-color: #1e1e1e; /* Dark background for the app container */
+    padding: 30px; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Stronger shadow for contrast */
+    width: 400px; /* Increased width */
+    max-width: 90%; /* Responsive width adjustment */
+  }
+  
+  /* Heading Styling */
+  h1 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    color: #bb86fc; /* Accent color for heading */
+  }
+  
+  /* Input Container */
+  .input-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Input Field Styling */
+  input[type="text"] {
+    width: 75%;
+    padding: 12px; /* Increased padding for input */
+    font-size: 1em;
+    border: 1px solid #333;
+    background-color: #333;
+    color: #e0e0e0;
+    border-radius: 6px;
+    outline: none;
+  }
+  
+  /* Add Button Styling */
+  button {
+    width: 22%;
+    background-color: #bb86fc; /* Accent color for the add button */
+    color: #121212;
+    font-size: 1em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 12px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #9b67d3; /* Darker shade on hover */
+  }
+  
+  /* Task List Styling */
+  ul {
+    list-style-type: none;
+    margin-top: 20px;
+  }
+  
+  /* Task Item Styling */
+  li {
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #2a2a2a; /* Slightly lighter background for task items */
+    color: #e0e0e0;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1em;
+  }
+  
+  /* Completed Task Styling */
+  li.completed {
+    text-decoration: line-through;
+    color: #757575; /* Grayed out text for completed tasks */
+  }
+  
+  /* Delete Button for Each Task */
+  li button {
+    background-color: #cf6679; /* Red accent color for delete button */
+    color: #121212;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+  }
+  
+  li button:hover {
+    background-color: #b94f61; /* Darker shade on hover */
+  }
+  
